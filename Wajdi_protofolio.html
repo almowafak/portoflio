@@ -1,0 +1,1307 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="footer, address, phone, icons" />
+
+    <title>M CODER</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+
+    <style>
+      .projects .project-grid figure:hover .overlay,
+      .projects .project-grid figure:hover figcaption {
+        opacity: 1;
+      }
+      .projects .project-grid .overlay {
+        background-color: #141c3a;
+      }
+      .projects .project-grid .overlay,
+      .projects .project-grid figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -webkit-transition: 0.45s ease-in-out;
+        transition: 0.45s ease-in-out;
+      }
+
+      .projects .project-grid figure figcaption h1.title {
+        color: #fff;
+        margin-bottom: 1.8rem;
+        font-weight: 500;
+      }
+
+      .projects .project-grid figure figcaption {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 0rem 3rem;
+        color: #fff;
+        z-index: 1;
+      }
+      .projects
+        .project-grid
+        figure
+        figcaption
+        a.button.is-primary.is-outlined.is-rounded {
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 1.2rem;
+        font-weight: 400;
+        border-width: 2px;
+        color: white;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      .has-text-centered {
+        text-align: center !important;
+      }
+      body {
+        color: #141c3a;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+      body,
+      button,
+      input,
+      select,
+      textarea {
+        font-family: "europa", sans-serif;
+      }
+      html {
+        background-color: white;
+        font-size: 16px;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        min-width: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        text-rendering: optimizeLegibility;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+      }
+      html {
+        color: -internal-root-color;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+        border-left: 1px solid #e6ecf8;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #141c3a;
+      }
+
+      trix-editor[contenteditable="false"] figure .attachment__toolbar,
+      figure figcaption {
+        display: block !important;
+      }
+
+      h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      /* Style the header with a grey background and some padding */
+      .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+      }
+
+      /* Style the header links */
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      /* Change the background color on mouse-over */
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Style the active/current link*/
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+      .header-right {
+        float: none;
+      }
+
+      .header .logo {
+        width: 150px;
+        height: 100px;
+      }
+
+      .spacing-huge,
+      .site-banner__inner,
+      .site-cta__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .section--large,
+      .site-header__inner {
+        max-width: 1430px;
+      }
+      .section,
+      .site-header__inner,
+      .site-banner__inner,
+      .site-cta__inner,
+      .site-footer__inner {
+        width: 92%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      *,
+      *:before,
+      *:after {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 0;
+        font-size: 100%;
+        line-height: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      user agent stylesheet section {
+        display: block;
+      }
+
+      h2,
+      .h2 {
+        font-size: 30px;
+        font-size: 1.875rem;
+      }
+      h1,
+      h1 a,
+      h2,
+      h2 a,
+      h3,
+      h3 a,
+      h4,
+      h4 a,
+      h5,
+      h5 a,
+      h6,
+      h6 a {
+        font-weight: 400;
+        color: #191a1d;
+      }
+      *,
+      *:before,
+      *:after {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 0;
+        font-size: 100%;
+        line-height: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+
+      .spacing-small-bottom {
+        padding-bottom: 35px;
+      }
+
+      .grid.grid--tb1-2:not(.grid--reverse) {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .grid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+      .grid.grid--m-1:not(.grid--reverse) > .grid__col.grid__col {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .grid.grid--tb1-2:not(.grid--reverse) > .grid__col.grid__col {
+        width: 48.1176470588%;
+        margin-right: 0;
+      }
+      .grid:not(.grid--reverse)
+        .grid__col--6:not(:nth-of-type(2n)):not(:last-child) {
+        margin-right: 3.7647058824%;
+      }
+      .grid:not(.grid--reverse) .grid__col--6 {
+        width: 48.1176470588%;
+      }
+      .grid__col .service {
+        min-height: 100%;
+      }
+      .service {
+        padding: 10%;
+      }
+      .txt-center {
+        text-align: center;
+      }
+      .service,
+      .full-service,
+      .page-cta {
+        border-radius: 6px;
+        border-top: 6px solid #4b6cc1;
+        background: #f6f6f6;
+      }
+      .service__icon {
+        display: inline-block;
+      }
+      .service__icon svg {
+        max-width: 52px;
+        max-height: 52px;
+      }
+      svg {
+        width: 100%;
+        display: block;
+      }
+      .service__icon svg * {
+        fill: #4b6cc1;
+      }
+      service__icon:after {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .service__icon:after {
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .site-logo:after,
+      .service__icon:after {
+        width: 100%;
+        max-width: 30px;
+        height: 6px;
+        display: block;
+        content: "";
+        border-radius: 1000px;
+        background: #4b6cc1;
+      }
+      .content-styles h1,
+      .content-styles h2,
+      .content-styles h3,
+      .content-styles h4,
+      .content-styles h5,
+      .content-styles h6 {
+        line-height: 115%;
+      }
+      h4,
+      .h4,
+      .site-banner__subtitle {
+        font-size: 22px;
+        font-size: 1.375rem;
+      }
+
+      h3,
+      .h3,
+      .quote__txt {
+        font-size: 26px;
+        font-size: 1.625rem;
+      }
+      h1,
+      h1 a,
+      h2,
+      h2 a,
+      h3,
+      h3 a,
+      h4,
+      h4 a,
+      h5,
+      h5 a,
+      h6,
+      h6 a {
+        font-weight: 400;
+        color: #191a1d;
+      }
+      h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      .txt-center {
+        text-align: center;
+      }
+      .content-styles * + p,
+      .content-styles li + li {
+        margin-top: 15px;
+      }
+      .content-styles p,
+      .content-styles li {
+        line-height: 160%;
+      }
+      .content-styles * + * {
+        margin-top: 20px;
+      }
+      .txt-large,
+      .site-cta__txt,
+      .quote__meta {
+        font-size: 20px;
+        font-size: 1.25rem;
+      }
+      .txt-dark {
+        color: #191a1d;
+      }
+      p,
+      li {
+        font-size: 18px;
+        font-size: 1.125rem;
+      }
+      .content-styles * + p,
+      .content-styles li + li {
+        margin-top: 15px;
+      }
+      .content-styles p,
+      .content-styles li {
+        line-height: 160%;
+      }
+      .content-styles * + * {
+        margin-top: 20px;
+      }
+      p,
+      li {
+        font-size: 18px;
+        font-size: 1.125rem;
+      }
+
+      .spacing-medium-top {
+        padding-top: 40px;
+      }
+      .txt-center {
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: 20px;
+        font-size: 1.25rem;
+      }
+      .section-title {
+        padding-bottom: 15px;
+        border-bottom: 4px solid #f6f6f6;
+        color: #919191;
+      }
+      label,
+      .section-title,
+      .site-logo,
+      .site-banner__tagline,
+      .icon-list__item {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+      }
+      h2,
+      .h2 {
+        font-size: 30px;
+        font-size: 1.875rem;
+      }
+      h1,
+      h1 a,
+      h2,
+      h2 a,
+      h3,
+      h3 a,
+      h4,
+      h4 a,
+      h5,
+      h5 a,
+      h6,
+      h6 a {
+        font-weight: 400;
+        color: #191a1d;
+      }
+      .bg-grey-stripes {
+        background-size: 400px;
+      }
+      .bg-grey-stripes {
+        background: #f6f6f6 url(../img/bg-stripes.svg) center/800px no-repeat;
+      }
+      .slanted,
+      .bg-slanted {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        -webkit-clip-path: polygon(
+          0 0,
+          100% 50px,
+          100% 100%,
+          0 calc(100% - 50px)
+        );
+        clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 calc(100% - 50px));
+      }
+      .spacing-huge,
+      .site-banner__inner,
+      .site-cta__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .section--small,
+      .site-banner__inner,
+      .site-footer__inner {
+        max-width: 925px;
+      }
+      .section,
+      .site-header__inner,
+      .site-banner__inner,
+      .site-cta__inner,
+      .site-footer__inner {
+        width: 92%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .quote {
+        text-align: center;
+      }
+      blockquote {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+      }
+      .quote__inner {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        position: relative;
+      }
+      .quote__txt {
+        line-height: 135%;
+        color: #191a1d;
+      }
+      h3,
+      .h3,
+      .quote__txt {
+        font-size: 26px;
+        font-size: 1.625rem;
+      }
+      p,
+      li {
+        font-size: 18px;
+        font-size: 1.125rem;
+      }
+      p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+      .quote__txt:before {
+        content: open-quote;
+      }
+      .quote__txt:after {
+        content: close-quote;
+      }
+
+      .quote__inner:after {
+        bottom: 0;
+      }
+      .quote__inner:before,
+      .quote__inner:after {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 60px;
+        height: 6px;
+        position: absolute;
+        left: 50%;
+        content: "";
+        border-radius: 1000px;
+        background: #4b6cc1;
+      }
+      .quote__meta {
+        margin-top: 80px;
+        display: block;
+        font-style: normal;
+      }
+      .txt-large,
+      .site-cta__txt,
+      .quote__meta {
+        font-size: 20px;
+        font-size: 1.25rem;
+      }
+      .quote__meta img {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        border-radius: 1000px;
+      }
+      .quote__meta img,
+      .quote__meta strong {
+        display: block;
+      }
+      img {
+        max-width: 100%;
+      }
+      .quote__meta strong {
+        margin-bottom: 10px;
+      }
+      .quote__meta img,
+      .quote__meta strong {
+        display: block;
+      }
+      strong {
+        font-weight: 500;
+      }
+
+      .slanted-top,
+      .site-cta {
+        padding-top: 50px;
+        background-color: #191a1d;
+        -webkit-clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+      }
+
+      .spacing-huge,
+      .site-banner__inner,
+      .site-cta__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .section--medium,
+      .site-banner--alt .site-banner__inner,
+      .site-cta__inner {
+        max-width: 1200px;
+      }
+
+      @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html {
+        background-color: #eaf0f2;
+      }
+
+      body {
+        font: 16px/1.6 Arial, sans-serif;
+      }
+
+      header {
+        text-align: center;
+        padding-top: 100px;
+        margin-bottom: 190px;
+      }
+
+      header h1 {
+        font: normal 32px/1.5 "Open Sans", sans-serif;
+        color: #3f71ae;
+        padding-bottom: 16px;
+      }
+
+      header h2 {
+        color: #f05283;
+      }
+
+      header span {
+        color: #3f71ea;
+      }
+
+      /* The footer is fixed to the bottom of the page */
+
+      footer {
+        position: fixed;
+        bottom: 0;
+      }
+
+      @media (max-height: 800px) {
+        footer {
+          position: static;
+        }
+        header {
+          padding-top: 40px;
+        }
+      }
+
+      .footer-distributed {
+        background-color: #2c292f;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+        padding: 50px 50px 60px 50px;
+        margin-top: 80px;
+      }
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      /* Footer left */
+
+      .footer-distributed .footer-left {
+        width: 30%;
+      }
+
+      .footer-distributed h3 {
+        color: #ffffff;
+        font: normal 36px "Cookie", cursive;
+        margin: 0;
+      }
+
+      /* The company logo */
+
+      .footer-distributed .footer-left img {
+        width: 30%;
+      }
+
+      .footer-distributed h3 span {
+        color: #e0ac1c;
+      }
+
+      /* Footer links */
+
+      .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 20px 0 12px;
+      }
+
+      .footer-distributed .footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .footer-distributed .footer-company-name {
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      /* Footer Center */
+
+      .footer-distributed .footer-center {
+        width: 35%;
+      }
+
+      .footer-distributed .footer-center i {
+        background-color: #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+      }
+
+      .footer-distributed .footer-center i.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+      }
+
+      .footer-distributed .footer-center p {
+        display: inline-block;
+        color: #ffffff;
+        vertical-align: middle;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-center p span {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .footer-distributed .footer-center p a {
+        color: #e0ac1c;
+        text-decoration: none;
+      }
+
+      /* Footer Right */
+
+      .footer-distributed .footer-right {
+        width: 30%;
+      }
+
+      .footer-distributed .footer-company-about {
+        line-height: 20px;
+        color: #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-company-about span {
+        display: block;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .footer-distributed .footer-icons {
+        margin-top: 25px;
+      }
+
+      .footer-distributed .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: #33383b;
+        border-radius: 2px;
+
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+
+        margin-right: 3px;
+        margin-bottom: 5px;
+      }
+
+      /* Here is the code for Responsive Footer */
+      /* You can remove below code if you don't want Footer to be responsive */
+
+      @media (max-width: 880px) {
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+
+        .footer-distributed .footer-center i {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a class="logo" href="#about" title="Al Mowafak Coders"
+        ><img
+          class="img-responsive"
+          src="./img/logo2.jpg"
+          alt="Al Mowafak Coders"
+          title="Al Mowafak Coders"
+        />
+      </a>
+      <div class="header-right">
+        <a class="active" href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+    <section class="section section--large spacing-huge">
+      <div class="spacing-small-bottom">
+        <h2 class="section-title">
+          My Services
+        </h2>
+      </div>
+
+      <div class="grid grid--tb1-2 grid--m-1">
+        <div class="grid__col grid__col--6">
+          <div class="service txt-center">
+            <span class="service__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M11 9.27V0l6 11-4 6H7l-4-6L9 0v9.27a2 2 0 1 0 2 0zM6 18h8v2H6v-2z"
+                ></path>
+              </svg>
+            </span>
+
+            <div class="content-styles">
+              <h3 class="h4">
+                Web Design
+              </h3>
+
+              <p class="txt-large txt-dark">
+                User Focused
+              </p>
+
+              <p>
+                A website should be designed for the people who will use it, so
+                that's exactly what I do. User focused design should be the
+                primary goal of any website.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__col grid__col--6">
+          <div class="service txt-center">
+            <span class="service__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M7 17H2a2 2 0 0 1-2-2V2C0 .9.9 0 2 0h16a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-5l4 2v1H3v-1l4-2zM2 2v11h16V2H2z"
+                ></path>
+              </svg>
+            </span>
+
+            <div class="content-styles">
+              <h3 class="h4">
+                Web Development
+              </h3>
+
+              <p class="txt-large txt-dark">
+                Responsive and Fast
+              </p>
+
+              <p>
+                Every website should be built with two primary goals: Firstly,
+                it needs to work across all devices. Secondly, it needs to be
+                fast as possible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacing-medium-top txt-center">
+        <a
+          class="button is-link is-outlined is-rounded is-medium"
+          href="/services/"
+        >
+          View All Services
+        </a>
+      </div>
+      <section class="bg-grey-stripes bg-slanted">
+        <div class="section section--small spacing-huge">
+          <blockquote class="quote">
+            <div class="quote__inner">
+              <p class="quote__txt">
+                Al Mowafak is an excellent web designer and faultless
+                technician. He’s a pleasure to work with, great value for money
+                and will always go the extra mile when necessary.
+              </p>
+            </div>
+
+            <cite class="quote__meta">
+              <img
+                src="./img/wajdi.jpg"
+                srcset="./img/wajdi.jpg 1x, ./img/wajdi.jpg 2x"
+                alt="Wajdi Al Mowafak"
+              />
+              <strong>
+                Wajdi Al<span
+                  style="font-family:Tangerine;color:Red;font-weight: bold;"
+                  >M</span
+                >owafak
+              </strong>
+              Owner of
+              <a href="http://www.fenwickstudio.co.uk/" target="_blank"
+                >Coder<span
+                  style="font-family:Tangerine;color:Red;font-weight: bold;"
+                  >M</span
+                ></a
+              >
+            </cite>
+          </blockquote>
+        </div>
+      </section>
+    </section>
+    <section class="section projects is-medium is-white has-text-centered">
+      <div class="container is-narrow">
+        <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">
+          My Recent Work
+        </h1>
+        <h2 class="subtitle is-size-5-desktop">
+          Here are a few design projects I've worked on recently. Want to see
+          more? <a href="mailto:w.almowafak@gmail.com">Email me</a>.
+        </h2>
+        <div class="project-grid">
+          <div class="columns is-multiline is-mobile">
+            <div
+              class="column is-12-mobile is-half-tablet is-one-third-desktop"
+            >
+              <figure class="image is-3by2">
+                <img
+                  class="project-thumb"
+                  src="https://almowafak.files.wordpress.com/2016/09/image2.png"
+                />
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">
+                    A word press blog that contains useful subjects, information
+                    and learning materials.
+                  </h1>
+                  <a
+                    class="button is-primary is-outlined is-rounded"
+                    href="https://almowafak.wordpress.com"
+                    target="_blank"
+                    ><span>Visit Website</span
+                    ><span class="icon"
+                      ><svg
+                        class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-angle-right"></i> --></span
+                    ></a
+                  >
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div
+              class="column is-12-mobile is-half-tablet is-one-third-desktop"
+            >
+              <figure class="image is-3by2">
+                <img class="project-thumb" src="img/mcpa.png" />
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">
+                    An audit firm that offers a full range of professional
+                    services including audit, accounting, tax, advisory and
+                    legal services.
+                  </h1>
+                  <a
+                    class="button is-primary is-outlined is-rounded"
+                    href="https://primo.press/wajdi-project"
+                    target="_blank"
+                    ><span>Visit Website</span
+                    ><span class="icon"
+                      ><svg
+                        class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-angle-right"></i> --></span
+                    ></a
+                  >
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div
+              class="column is-12-mobile is-half-tablet is-one-third-desktop"
+            >
+              <figure class="image is-3by2">
+                <img class="project-thumb" src="img/chronicled.png" />
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">
+                    Blockchain pioneers bringing transparency, trust, and
+                    security to supply.
+                  </h1>
+                  <a
+                    class="button is-primary is-outlined is-rounded"
+                    href="https://www.chronicled.org/"
+                    target="_blank"
+                    ><span>Visit Website</span
+                    ><span class="icon"
+                      ><svg
+                        class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-angle-right"></i> --></span
+                    ></a
+                  >
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div
+              class="column is-12-mobile is-half-tablet is-one-third-desktop"
+            >
+              <figure class="image is-3by2">
+                <img class="project-thumb" src="img/glcsolutions.png" />
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">
+                    Business savvy tech experts helping forward thinking
+                    companies get things done.
+                  </h1>
+                  <a
+                    class="button is-primary is-outlined is-rounded"
+                    href="http://glcsolutions.ca"
+                    ><span>Visit Website</span
+                    ><span class="icon"
+                      ><svg
+                        class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-angle-right"></i> --></span
+                    ></a
+                  >
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div
+              class="column is-12-mobile is-half-tablet is-one-third-desktop"
+            >
+              <figure class="image is-3by2">
+                <img class="project-thumb" src="img/coupal.png" />
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">
+                    Vancouver's tower crane rental service and support leader
+                    since 1974.
+                  </h1>
+                  <a
+                    class="button is-primary is-outlined is-rounded"
+                    href="http://coupalcranes.com/"
+                    target="_blank"
+                    ><span>Visit Website</span
+                    ><span class="icon"
+                      ><svg
+                        class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-angle-right"></i> --></span
+                    ></a
+                  >
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+            <div
+              class="column is-12-mobile is-half-tablet is-one-third-desktop"
+            >
+              <figure class="image is-3by2">
+                <img class="project-thumb" src="img/wedlerengineering.png" />
+                <figcaption>
+                  <h1 class="title is-size-5 is-size-4-widescreen">
+                    Results-oriented, responsive and flexible full service civil
+                    engineering firm.
+                  </h1>
+                  <a
+                    class="button is-primary is-outlined is-rounded"
+                    href="http://wedler.com"
+                    target="_blank"
+                    ><span>View Website</span
+                    ><span class="icon"
+                      ><svg
+                        class="svg-inline--fa fa-angle-right fa-w-8"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="angle-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                        ></path></svg
+                      ><!-- <i class="fas fa-angle-right"></i> --></span
+                    ></a
+                  >
+                </figcaption>
+                <div class="overlay"></div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <a
+              class="button is-primary is-outlined is-rounded is-medium"
+              href="https://almowafak.wordpress.com"
+              ><span class="icon"
+                ><svg
+                  class="svg-inline--fa fa-dribbble fa-w-16"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="dribbble"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"
+                  ></path></svg
+                ><!-- <i class="fab fa-dribbble"></i> --></span
+              ><span>See more on WordPress</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <img src="img/logo2.jpg" />
+        <h3>About<span>Coder M</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">Blog</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">
+          © 2019 Al<span
+            style="font-family:Tangerine;color:Red;font-weight: bold;"
+            >M</span
+          >
+          owafak Coders Ltd.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span>13 El tawon St. Maadi</span>
+            Cairo, Egypt
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+20 1126690600</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:w.almowafak@gmail.com">Email me</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Front-end Developer that helping start-ups, small businesses, and
+          agencies achieve high quality websites and exceptional user experience
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
